@@ -60,7 +60,7 @@ function App() {
         <Route exact path="/edit-account">
           {isLoggedIn ? <EditAccount /> : <Redirect to="/login" />}
         </Route>
-        <Route exact path="/profile/:nanoid">
+        <Route path="/:nanoid">
           <AnotherProfile />
         </Route>
         <Route exact path="*">
